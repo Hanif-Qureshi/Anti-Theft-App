@@ -27,9 +27,6 @@ This app detects theft-related actions like charger unplugging, pocket removal, 
 - 🛡️ **Foreground Services**  
   Keeps services running reliably in the background with visible notifications.
 
-- 🔁 **Auto-Restart on Reboot**  
-  Automatically resumes the last active detection mode when the phone reboots.
-
 - 📲 **SharedPreferences Integration**  
   Remembers active modes and updates UI status indicators.
 
