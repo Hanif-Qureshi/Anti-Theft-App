@@ -47,16 +47,8 @@ class MainActivity : AppCompatActivity() {
         chargerStatus = findViewById(R.id.statusCharger)
         motionStatus = findViewById(R.id.statusMotion)
 
-        // Request permission (for Android 13+)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(android.Manifest.permission.FOREGROUND_SERVICE),
-                1001
-            )
-        }
 
-        // Click Listeners
+
         pocketBtn.setOnClickListener {
             startService(Intent(this, PocketDetectionService::class.java))
             SharedPrefUtil.addActiveService(this, "pocket")
